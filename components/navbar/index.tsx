@@ -80,6 +80,7 @@ const Navbar = () => {
 						height={48}
 						alt='hexagon'
 						className='transition-all duration-300 ease-in-out group-hover:-translate-y-[2px] group-hover:scale-[98%]'
+						priority
 					/>
 					<Image
 						src={Logo}
