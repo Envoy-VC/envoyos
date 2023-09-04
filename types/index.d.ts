@@ -14,3 +14,10 @@ export interface ProjectDetails {
 	technologies: string[];
 	links: { name: string; href: string; Icon: IconType }[];
 }
+
+export interface BlogPostDetails {
+	title: string;
+	description: string;
+	image: StaticImageData;
+	link: string;
+}

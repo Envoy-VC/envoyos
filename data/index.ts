@@ -1,7 +1,11 @@
-import { NavbarLink, ProjectDetails } from '@/types';
+import { NavbarLink, ProjectDetails, BlogPostDetails } from '@/types';
 import Blip from '@/public/blip.webp';
 import Aura from '@/public/aura.webp';
 import Arkway from '@/public/arkway.webp';
+
+import Blog1 from '@/public/blog-1.webp';
+import Blog2 from '@/public/blog-2.webp';
+import Blog3 from '@/public/blog-3.webp';
 
 import { PiGithubLogo, PiLink } from 'react-icons/pi';
 
@@ -47,6 +51,30 @@ Here are a few technologies I've been working with recently:`,
 		'GraphQL',
 	],
 };
+
+export const BlogDetails: BlogPostDetails[] = [
+	{
+		title: 'Build a Zero Knowledge Airdrop App with Mina Protocol',
+		description:
+			'Zero-knowledge proofs (ZK-Proofs) have revolutionized the field of cryptography and secure computing, offering solutions to real-world problems.',
+		link: 'https://blog.vedantc.dev/build-a-zk-airdrop-app-with-mina-protocol',
+		image: Blog1,
+	},
+	{
+		title: 'The Technical Nitty-Gritty of Account Abstraction',
+		description:
+			'Account abstraction has become a hot topic in the Ethereum community since the release of ERC-4337.',
+		link: 'https://blog.vedantc.dev/the-technical-nitty-gritty-of-account-abstraction',
+		image: Blog2,
+	},
+	{
+		title: 'Build a Lottery Smart Contract with Chainlink VRF',
+		description:
+			'Chainlink VRF is a secure and reliable way to generate random numbers on the blockchain, making it ideal for use in lotteries and other games of chance.',
+		link: 'https://blog.vedantc.dev/build-a-lottery-smart-contract-with-chainlink-vrf',
+		image: Blog3,
+	},
+];
 
 export const Projects: ProjectDetails[] = [
 	{
@@ -235,5 +263,5 @@ export const ContactDetails = {
 		opportunities in the web3 space. Whether you have a
 		question or just want to say hi, I'll try my best to
 		get back to you!`,
-	email: 'vedantchainani1084@gmail.com'
+	email: 'vedantchainani1084@gmail.com',
 };

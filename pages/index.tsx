@@ -7,7 +7,7 @@ import {
 	Sidebar,
 	Attribution,
 } from '@/components';
-import { Hero, About, Work, MoreProjects, Contact } from '@/sections';
+import { Hero, About, Blog, Work, MoreProjects, Contact } from '@/sections';
 
 const Home = () => {
 	const { menuOpen } = React.useContext(SidebarContext);
@@ -34,6 +34,7 @@ const Home = () => {
 				<Navbar />
 				<Hero />
 				<About />
+				<Blog />
 				<Work />
 				<MoreProjects />
 				<Contact />

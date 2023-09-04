@@ -5,6 +5,7 @@ import Sidebar from './sidebar';
 import Loader from './loader';
 import FeaturedProjectCard from './featured-project-card';
 import ProjectCard from './project-card';
+import BlogPostCard from './blog-post-card';
 import Attribution from './attribution';
 
 export {
@@ -15,5 +16,6 @@ export {
 	Sidebar,
 	FeaturedProjectCard,
 	ProjectCard,
+	BlogPostCard,
 	Attribution,
 };
