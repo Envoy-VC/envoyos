@@ -64,7 +64,7 @@ const Navbar = () => {
 
 	return (
 		<motion.nav
-			className='sticky top-0 flex w-full flex-row items-center justify-between bg-overlay px-8 py-7 sm:px-12'
+			className='sticky top-0 flex w-full flex-row items-center justify-between bg-overlay px-8 py-7 sm:px-12 z-[10]'
 			variants={variants}
 			animate={hidden ? 'hidden' : 'visible'}
 			transition={{ ease: 'easeInOut', duration: 0.4 }}
