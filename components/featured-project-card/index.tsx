@@ -58,7 +58,7 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 			variants={FeaturedCardVariants}
 		>
 			<div
-				className={`flex flex-col justify-between gap-4 ${
+				className={`flex flex-col justify-between gap-4  ${
 					isEven ? 'xl:flex-row' : 'xl:flex-row-reverse'
 				}`}
 			>
@@ -101,7 +101,7 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 						</div>
 					</div>
 					<div
-						className={`flex max-w-sm flex-row flex-wrap gap-3 xl:items-end xl:justify-end justify-start ${
+						className={`flex max-w-sm flex-row flex-wrap justify-start gap-3 xl:items-end xl:justify-end ${
 							isEven ? 'items-start' : 'items-end'
 						}`}
 					>

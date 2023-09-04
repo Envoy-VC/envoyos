@@ -2,49 +2,108 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 
 const Loader = () => {
-	const hexagon: Variants = {
-		hidden: {
-			pathLength: 0,
-		},
-		visible: {
-			pathLength: 1,
-			transition: { duration: 2, ease: 'easeInOut' },
+	const draw = {
+		hidden: { pathLength: 0, opacity: 0 },
+		visible: (i: number) => {
+			const delay = i * 0.175;
+			return {
+				pathLength: 1,
+				opacity: 1,
+				transition: {
+					pathLength: {
+						delay,
+						type: 'tween',
+						duration: 0.2,
+					},
+					opacity: { delay, duration: 0.01 },
+				},
+			};
 		},
 	};
 
-	const text: Variants = {
+	const letterVariant: Variants = {
 		hidden: {
 			opacity: 0,
 		},
 		visible: {
 			opacity: 1,
 			transition: {
-				delay: 1,
+				delay: 1.3,
 			},
 		},
 	};
+
 	return (
-		<div className='flex h-screen items-center justify-center'>
+		<div className='flex h-screen items-center justify-center bg-[#020C1B]'>
 			<motion.svg
-				width='348'
-				height='100'
-				viewBox='0 0 348 400'
+				width='100'
+				height='382'
+				viewBox='0 0 333 382'
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
+				initial='hidden'
+				animate='visible'
 			>
 				<motion.path
-					d='M230.032 136.956L228.268 155.184H143.4V193.796H204.16L202.592 212.024H143.4V253.576H229.836L228.072 272H123.8V136.956H230.032Z'
-					fill='#64FFDA'
-					variants={text}
-					initial='hidden'
-					animate='visible'
+					d='M166.885 11L11 101'
+					stroke='#64FFDA'
+					stroke-width='20'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					variants={draw}
+					custom={1}
 				/>
 				<motion.path
-					fill-rule='evenodd'
-					clip-rule='evenodd'
-					d='M347.205 100L174 0L0.794922 100V300L174 400L347.205 300V100ZM331.617 109L174 18L16.3834 109V291L174 382L331.617 291V109Z'
+					d='M11 101L11 281'
+					stroke='#64FFDA'
+					stroke-width='20'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					variants={draw}
+					custom={2}
+				/>
+				<motion.path
+					d='M11 281L166.885 371'
+					stroke='#64FFDA'
+					stroke-width='20'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					variants={draw}
+					custom={3}
+				/>
+				<motion.path
+					d='M167 371L322.885 281'
+					stroke='#64FFDA'
+					stroke-width='20'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					variants={draw}
+					custom={4}
+				/>
+				<motion.path
+					d='M323 281V101'
+					stroke='#64FFDA'
+					stroke-width='20'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					variants={draw}
+					custom={5}
+				/>
+				<motion.path
+					d='M322.885 101L167 11'
+					stroke='#64FFDA'
+					stroke-width='20'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					variants={draw}
+					custom={6}
+				/>
+				<motion.path
+					d='M223.032 127.956L221.268 146.184H136.4V184.796H197.16L195.592 203.024H136.4V244.576H222.836L221.072 263H116.8V127.956H223.032Z'
 					fill='#64FFDA'
-					variants={hexagon}
+					initial='hidden'
+					animate='visible'
+					variants={letterVariant}
 				/>
 			</motion.svg>
 		</div>
