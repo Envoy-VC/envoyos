@@ -26,7 +26,7 @@ const About = () => {
 	};
 	return (
 		<section
-			className='mx-auto max-w-screen-sm px-8 py-24 sm:py-64 xl:max-w-[840px] xl:px-0'
+			className='mx-auto max-w-screen-sm px-8 py-24 sm:py-64 xl:max-w-[860px] xl:px-0'
 			id='about'
 		>
 			<motion.div
@@ -74,8 +74,8 @@ const About = () => {
 								<Image
 									alt='Avatar'
 									src={Avatar.src}
-									height={350}
-									width={350}
+									height={324}
+									width={324}
 									className='aspect-[1/1] rounded-md object-cover opacity-60 grayscale transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none'
 								/>
 							</div>
