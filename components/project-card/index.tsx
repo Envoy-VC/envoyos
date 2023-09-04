@@ -36,8 +36,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 	const { name, description, technologies, links } = project;
 
 	return (
-		<div className='group rounded-sm bg-[#112240] p-4 py-3 shadow-md drop-shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-2'>
-			<div className='flex flex-col justify-between gap-4'>
+		<div className='group h-full rounded-sm bg-[#112240] p-4 py-3 shadow-md drop-shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-2'>
+			<div className='flex flex-col justify-between gap-4 h-full py-2'>
 				<div className='flex items-center justify-between'>
 					<PiFolderLight className='text-primary' size={56} />
 					<div className='my-2 flex gap-2'>

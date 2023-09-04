@@ -32,11 +32,11 @@ const MoreProjects = () => {
 			className='mx-auto max-w-screen-sm px-8 py-24 sm:py-36 xl:max-w-screen-lg xl:px-0'
 			id='work'
 		>
-			<div className='mt-2 min-w-fit text-center font-calibreSemibold text-2xl text-textPrimary sm:text-4xl'>
+			<div className='min-w-fit text-center font-calibreSemibold text-3xl text-textPrimary sm:text-4xl'>
 				Other Noteworthy Projects
 			</div>
 			<motion.div
-				className='my-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3'
+				className='my-16 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3'
 				variants={container}
 				initial='hidden'
 				whileInView='visible'
