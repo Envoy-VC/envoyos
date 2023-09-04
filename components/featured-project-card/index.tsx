@@ -19,7 +19,7 @@ interface IconLinkProps {
 
 const IconLink = ({ Icon, name, href }: IconLinkProps) => {
 	return (
-		<Link href={href} target='_blank' rel='noopener noreferrer'>
+		<Link href={href} target='_blank' rel='noopener noreferrer' title={name}>
 			<Icon
 				size={24}
 				className='transition-all duration-200 ease-in-out hover:-translate-y-1 hover:text-primary'

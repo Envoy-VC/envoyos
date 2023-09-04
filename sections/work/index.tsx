@@ -16,10 +16,14 @@ const Work = () => {
 				</div>
 				<div className='w-full border-t-[1px] border-[#233554]' />
 			</div>
-			<div className='flex flex-col gap-24 my-8'>
+			<div className='my-8 flex flex-col gap-24'>
 				{Projects.filter((project) => project.isFeatured).map(
 					(project, index) => (
-						<FeaturedProjectCard key={index} project={project} index={index} />
+						<FeaturedProjectCard
+							key={index}
+							project={project}
+							index={index}
+						/>
 					)
 				)}
 			</div>
