@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	return (
 		<SidebarContext.Provider value={{ menuOpen, setMenuOpen }}>
-			<Component {...pageProps} />
+			{isMounted ? <Component {...pageProps} /> : <Loader />}
 		</SidebarContext.Provider>
 	);
 }

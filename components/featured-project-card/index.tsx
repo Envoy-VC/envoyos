@@ -1,15 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ProjectDetails } from '@/types';
+import { motion, Variants } from 'framer-motion';
 
+// Types
+import { ProjectDetails } from '@/types';
 import { IconType } from 'react-icons';
 
 interface FeaturedProjectCardProps {
 	project: ProjectDetails;
 	index: number;
 }
-
 interface IconLinkProps {
 	Icon: IconType;
 	name: string;
@@ -30,8 +31,27 @@ const IconLink = ({ Icon, name, href }: IconLinkProps) => {
 const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 	const { name, description, technologies, image, links } = project;
 	const isEven = index % 2 === 0;
+
+	const FeaturedCardVariants: Variants = {
+		hidden: { opacity: 0, y: 50 },
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				delay: 0.3,
+				type: 'tween',
+				duration: 1,
+			},
+		},
+	};
+
 	return (
-		<div className=''>
+		<motion.div
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ once: true }}
+			variants={FeaturedCardVariants}
+		>
 			<div
 				className={`flex flex-col justify-between gap-4 ${
 					isEven ? 'xl:flex-row' : 'xl:flex-row-reverse'
@@ -41,7 +61,7 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 					<Image
 						alt='Avatar'
 						src={image}
-						className='rounded-xs min-h-[376px] w-full max-w-[350px] object-cover sm:opacity-60 sm:grayscale transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none sm:max-w-xl filter-none'
+						className='rounded-xs min-h-[376px] w-full max-w-[330px] object-cover filter-none transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none sm:max-w-xl sm:opacity-60 sm:grayscale'
 					/>
 				</div>
 
@@ -96,7 +116,7 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
