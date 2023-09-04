@@ -64,7 +64,7 @@ const Navbar = () => {
 
 	return (
 		<motion.nav
-			className='sticky top-0 flex w-full flex-row items-center justify-between bg-overlay px-8 py-7 sm:px-12 z-[10]'
+			className='sticky top-0 z-[10] flex w-full flex-row items-center justify-between bg-overlay px-8 py-7 sm:px-12'
 			variants={variants}
 			animate={hidden ? 'hidden' : 'visible'}
 			transition={{ ease: 'easeInOut', duration: 0.4 }}
@@ -88,6 +88,7 @@ const Navbar = () => {
 						height={48}
 						alt='logo'
 						className='absolute transition-all duration-300 ease-in-out group-hover:-translate-x-1 group-hover:-translate-y-1'
+						priority
 					/>
 				</Link>
 			</motion.div>
