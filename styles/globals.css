@@ -4,21 +4,25 @@
 
 @font-face {
 	font-family: 'Calibre Regular';
+	font-display: swap;
 	src: url('/fonts/Calibre-Regular.woff2');
 }
 
 @font-face {
 	font-family: 'Calibre Medium';
+	font-display: swap;
 	src: url('/fonts/Calibre-Medium.woff2');
 }
 
 @font-face {
 	font-family: 'Calibre Semibold';
+	font-display: swap;
 	src: url('/fonts/Calibre-Semibold.woff2');
 }
 
 @font-face {
 	font-family: 'SF Mono';
+	font-display: swap;
 	src: url('/fonts/SFMono-Regular.woff2');
 }
 
