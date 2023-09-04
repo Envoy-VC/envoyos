@@ -33,79 +33,98 @@ const Loader = () => {
 		},
 	};
 
+	const logoVariants: Variants = {
+		initial: {
+			scale: 1,
+		},
+		exit: {
+			scale: 0,
+			transition: {
+				delay: 1.8,
+				duration: 0.5,
+			},
+		},
+	};
+
 	return (
 		<div className='flex h-screen items-center justify-center bg-[#020C1B]'>
-			<motion.svg
-				width='100'
-				height='382'
-				viewBox='0 0 333 382'
-				fill='none'
-				xmlns='http://www.w3.org/2000/svg'
-				initial='hidden'
-				animate='visible'
+			<motion.div
+				initial='initial'
+				animate='exit'
+				variants={logoVariants}
 			>
-				<motion.path
-					d='M166.885 11L11 101'
-					stroke='#64FFDA'
-					stroke-width='20'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					variants={draw}
-					custom={1}
-				/>
-				<motion.path
-					d='M11 101L11 281'
-					stroke='#64FFDA'
-					stroke-width='20'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					variants={draw}
-					custom={2}
-				/>
-				<motion.path
-					d='M11 281L166.885 371'
-					stroke='#64FFDA'
-					stroke-width='20'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					variants={draw}
-					custom={3}
-				/>
-				<motion.path
-					d='M167 371L322.885 281'
-					stroke='#64FFDA'
-					stroke-width='20'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					variants={draw}
-					custom={4}
-				/>
-				<motion.path
-					d='M323 281V101'
-					stroke='#64FFDA'
-					stroke-width='20'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					variants={draw}
-					custom={5}
-				/>
-				<motion.path
-					d='M322.885 101L167 11'
-					stroke='#64FFDA'
-					stroke-width='20'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					variants={draw}
-					custom={6}
-				/>
-				<motion.path
-					d='M223.032 127.956L221.268 146.184H136.4V184.796H197.16L195.592 203.024H136.4V244.576H222.836L221.072 263H116.8V127.956H223.032Z'
-					fill='#64FFDA'
+				<motion.svg
+					width='100'
+					height='382'
+					viewBox='0 0 333 382'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'
 					initial='hidden'
 					animate='visible'
-					variants={letterVariant}
-				/>
-			</motion.svg>
+				>
+					<motion.path
+						d='M166.885 11L11 101'
+						stroke='#64FFDA'
+						stroke-width='20'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						variants={draw}
+						custom={1}
+					/>
+					<motion.path
+						d='M11 101L11 281'
+						stroke='#64FFDA'
+						stroke-width='20'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						variants={draw}
+						custom={2}
+					/>
+					<motion.path
+						d='M11 281L166.885 371'
+						stroke='#64FFDA'
+						stroke-width='20'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						variants={draw}
+						custom={3}
+					/>
+					<motion.path
+						d='M167 371L322.885 281'
+						stroke='#64FFDA'
+						stroke-width='20'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						variants={draw}
+						custom={4}
+					/>
+					<motion.path
+						d='M323 281V101'
+						stroke='#64FFDA'
+						stroke-width='20'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						variants={draw}
+						custom={5}
+					/>
+					<motion.path
+						d='M322.885 101L167 11'
+						stroke='#64FFDA'
+						stroke-width='20'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						variants={draw}
+						custom={6}
+					/>
+					<motion.path
+						d='M223.032 127.956L221.268 146.184H136.4V184.796H197.16L195.592 203.024H136.4V244.576H222.836L221.072 263H116.8V127.956H223.032Z'
+						fill='#64FFDA'
+						initial='hidden'
+						animate='visible'
+						variants={letterVariant}
+					/>
+				</motion.svg>
+			</motion.div>
 		</div>
 	);
 };

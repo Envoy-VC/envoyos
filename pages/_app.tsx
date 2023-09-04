@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	React.useEffect(() => {
 		setTimeout(() => {
 			setIsMounted(true);
-		}, 2000);
+		}, 2300);
 	}, [isMounted]);
 
 	return (
