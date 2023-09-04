@@ -31,11 +31,11 @@ export const HeroSectionDetails = {
 };
 
 export const AboutMeDetails = {
-	about: `Hi! I'm Vedant. My journey in the Web3 space began in 2021, inspired by the TV series "Silicon Valley." Since then, I've been diving deep into various protocols, learning their intricacies, and building different applications on top of them.
-
-In addition to development, I also write technical articles on Web3 topics. Whether it's a deep dive into a specific protocol or a technical implementation guide, I cover a wide range of subjects to share knowledge with the community.
-
-Currently, I'm focused on learning more about the production-grade T3 stack and actively participating in hackathons to challenge myself and stay up-to-date with the latest advancements in the ecosystem.
+	about: `Hi! I'm Vedant. My journey in the Web3 space began in 2021, and since then I have been learning about various protocols and building different applications on top of them.
+	
+I also write technical articles on Web3 topics such as protocol deep dive, Technical Implementations and Twiiter Threads.
+	
+Currently, I'm focused on learning more about the production-grade T3 stack and actively participating in hackathons.
 
 Here are a few technologies I've been working with recently:`,
 	skills: [
@@ -47,15 +47,6 @@ Here are a few technologies I've been working with recently:`,
 		'GraphQL',
 	],
 };
-
-`
-
-GM! I'm Vedant, and I love creating awesome Web3 applications on top of different protocols. My journey in the Web3 space began in 2021, inspired by the TV series "Silicon Valley." Since then, I've been diving deep into various protocols, learning their intricacies, and building different applications on top of them.
-
-In addition to development, I also write technical articles on Web3 topics. Whether it's a deep dive into a specific protocol or a technical implementation guide, I cover a wide range of subjects to share knowledge with the community.
-
-Currently, I'm focused on learning more about the production-grade T3 stack and actively participating in hackathons to challenge myself and stay up-to-date with the latest advancements in the Web3 ecosystem.
-`;
 
 export const Projects: ProjectDetails[] = [
 	{
@@ -78,7 +69,7 @@ export const Projects: ProjectDetails[] = [
 			},
 			{
 				name: 'Website',
-				href: 'https://blip.vercel.app/',
+				href: 'https://blip-lens.vercel.app/',
 
 				Icon: PiLink,
 			},
