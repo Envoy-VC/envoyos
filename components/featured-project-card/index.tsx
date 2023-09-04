@@ -66,7 +66,7 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 					<Image
 						alt='Avatar'
 						src={image!}
-						className='rounded-xs aspect-video max-w-[330px] filter-none transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none sm:max-w-xl sm:opacity-60 sm:grayscale object-auto'
+						className='rounded-xs object-auto aspect-video max-w-[330px] filter-none transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none sm:max-w-xl sm:opacity-60 sm:grayscale'
 					/>
 				</div>
 
@@ -101,8 +101,8 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 						</div>
 					</div>
 					<div
-						className={`flex max-w-sm flex-row flex-wrap items-start gap-3 xl:items-end ${
-							isEven ? 'justify-end' : 'justify-start'
+						className={`flex max-w-sm flex-row flex-wrap gap-3 xl:items-end xl:justify-end justify-start ${
+							isEven ? 'items-start' : 'items-end'
 						}`}
 					>
 						{technologies.map((item, index) => (
