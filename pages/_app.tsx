@@ -2,7 +2,7 @@ import '@/styles/globals.css';
 import React from 'react';
 import type { AppProps } from 'next/app';
 
-import { Loader, Navbar } from '@/components';
+import { Loader, SEO } from '@/components';
 
 // Sidebar Context
 export const SidebarContext = React.createContext<{
@@ -25,7 +25,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	return (
 		<SidebarContext.Provider value={{ menuOpen, setMenuOpen }}>
-			{isMounted ? <Component {...pageProps} /> : <Loader />}
+			<>
+				<SEO />
+				{isMounted ? <Component {...pageProps} /> : <Loader />}
+			</>
 		</SidebarContext.Provider>
 	);
 }

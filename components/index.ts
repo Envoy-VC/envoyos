@@ -7,6 +7,7 @@ import FeaturedProjectCard from './featured-project-card';
 import ProjectCard from './project-card';
 import BlogPostCard from './blog-post-card';
 import Attribution from './attribution';
+import SEO from './seo';
 
 export {
 	Navbar,
@@ -18,4 +19,5 @@ export {
 	ProjectCard,
 	BlogPostCard,
 	Attribution,
+	SEO,
 };
