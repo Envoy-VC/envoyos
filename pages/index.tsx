@@ -6,7 +6,7 @@ import {
 	EmailContactCover,
 	Sidebar,
 } from '@/components';
-import { Hero, About, Work, MoreProjects } from '@/sections';
+import { Hero, About, Work, MoreProjects, Contact } from '@/sections';
 
 const Home = () => {
 	const { menuOpen } = React.useContext(SidebarContext);
@@ -35,6 +35,7 @@ const Home = () => {
 				<About />
 				<Work />
 				<MoreProjects />
+				<Contact />
 			</div>
 		</>
 	);

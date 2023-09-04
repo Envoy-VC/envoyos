@@ -26,7 +26,7 @@ const IconLink = ({ Icon, name, href }: IconLinkProps) => {
 		>
 			<Icon
 				size={24}
-				className='transition-all duration-200 ease-in-out hover:-translate-y-1 hover:text-primary'
+				className='transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:text-primary'
 			/>
 		</Link>
 	);

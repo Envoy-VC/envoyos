@@ -229,3 +229,11 @@ export const Projects: ProjectDetails[] = [
 		],
 	},
 ];
+
+export const ContactDetails = {
+	paragraph: `I'm actively looking for any new
+		opportunities in the web3 space. Whether you have a
+		question or just want to say hi, I'll try my best to
+		get back to you!`,
+	email: 'vedantchainani1084@gmail.com'
+};
