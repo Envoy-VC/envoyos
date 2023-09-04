@@ -5,6 +5,7 @@ import Sidebar from './sidebar';
 import Loader from './loader';
 import FeaturedProjectCard from './featured-project-card';
 import ProjectCard from './project-card';
+import Attribution from './attribution';
 
 export {
 	Navbar,
@@ -14,4 +15,5 @@ export {
 	Sidebar,
 	FeaturedProjectCard,
 	ProjectCard,
+	Attribution,
 };

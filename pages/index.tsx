@@ -5,6 +5,7 @@ import {
 	SocialLinksCover,
 	EmailContactCover,
 	Sidebar,
+	Attribution,
 } from '@/components';
 import { Hero, About, Work, MoreProjects, Contact } from '@/sections';
 
@@ -36,6 +37,7 @@ const Home = () => {
 				<Work />
 				<MoreProjects />
 				<Contact />
+				<Attribution />
 			</div>
 		</>
 	);
