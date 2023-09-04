@@ -19,7 +19,12 @@ interface IconLinkProps {
 
 const IconLink = ({ Icon, name, href }: IconLinkProps) => {
 	return (
-		<Link href={href} target='_blank' rel='noopener noreferrer' title={name}>
+		<Link
+			href={href}
+			target='_blank'
+			rel='noopener noreferrer'
+			title={name}
+		>
 			<Icon
 				size={24}
 				className='transition-all duration-200 ease-in-out hover:-translate-y-1 hover:text-primary'
@@ -57,11 +62,11 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 					isEven ? 'xl:flex-row' : 'xl:flex-row-reverse'
 				}`}
 			>
-				<div className='rounded-xs group w-fit min-w-max bg-[#42c7a8]'>
+				<div className='rounded-xs group h-fit w-fit min-w-max bg-[#42c7a8]'>
 					<Image
 						alt='Avatar'
-						src={image}
-						className='rounded-xs min-h-[376px] w-full max-w-[330px] object-cover filter-none transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none sm:max-w-xl sm:opacity-60 sm:grayscale'
+						src={image!}
+						className='rounded-xs aspect-video max-w-[330px] filter-none transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:filter-none sm:max-w-xl sm:opacity-60 sm:grayscale object-auto'
 					/>
 				</div>
 
@@ -71,7 +76,7 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 					}`}
 				>
 					<div
-						className={`flex flex-col items-start gap-3 ${
+						className={`flex h-auto min-h-[20rem] flex-col items-start gap-3 sm:min-h-[14rem] ${
 							isEven ? 'xl:items-end' : 'xl:items-start'
 						}`}
 					>
@@ -95,7 +100,11 @@ const FeaturedProjectCard = ({ project, index }: FeaturedProjectCardProps) => {
 							</div>
 						</div>
 					</div>
-					<div className='mt-48 flex max-w-sm flex-row flex-wrap items-start gap-3 sm:mt-32 xl:items-end'>
+					<div
+						className={`flex max-w-sm flex-row flex-wrap items-start gap-3 xl:items-end ${
+							isEven ? 'justify-end' : 'justify-start'
+						}`}
+					>
 						{technologies.map((item, index) => (
 							<span
 								key={index}

@@ -1,5 +1,7 @@
 import { NavbarLink, ProjectDetails } from '@/types';
-import Blip from '@/public/blip.png';
+import Blip from '@/public/blip.webp';
+import Aura from '@/public/aura.webp';
+import Arkway from '@/public/arkway.webp';
 
 import { PiGithubLogo, PiLink } from 'react-icons/pi';
 
@@ -59,14 +61,14 @@ export const Projects: ProjectDetails[] = [
 	{
 		name: 'Blip',
 		isFeatured: true,
-		description: `Blip is a decentralized social media platform built on top of the Ethereum blockchain. It allows users to post text-based messages and tip other users for their content.`,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
 		image: Blip,
 		technologies: [
-			'Solidity',
-			'Hardhat',
-			'TypeScript',
-			'React',
-			'Tailwind CSS',
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
 		],
 		links: [
 			{
@@ -82,26 +84,51 @@ export const Projects: ProjectDetails[] = [
 		],
 	},
 	{
-		name: 'Blip',
+		name: 'Aura',
 		isFeatured: true,
-		description: `Blip is a decentralized social media platform built on top of the Ethereum blockchain. It allows users to post text-based messages and tip other users for their content.`,
-		image: Blip,
+		description: `Aura is a decentralized chat app powered by XMTP. With its secure encrypted messaging,seamless interoperability, Aura offers a user-friendly experience while prioritizing privacy.`,
+		image: Aura,
 		technologies: [
-			'Solidity',
-			'Hardhat',
-			'TypeScript',
-			'React',
+			'Next.js',
+			'XMTP',
+			'Ethereum',
+			'thirdweb',
 			'Tailwind CSS',
 		],
 		links: [
 			{
 				name: 'GitHub',
-				href: 'https://github.com/Envoy-VC/blip',
+				href: 'https://github.com/Envoy-VC/aura',
 				Icon: PiLink,
 			},
 			{
 				name: 'Website',
-				href: 'https://blip.vercel.app/',
+				href: 'https://aura-chat.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
+	{
+		name: 'Arkway',
+		isFeatured: true,
+		description: `Arkway is a decentralized and distributed file storage solution designed to keep your files secure and encrypted. Arkway uses Lit Protocol for Access control and encryption to protect your data.`,
+		image: Arkway,
+		technologies: [
+			'Next.js',
+			'Lit Protocol',
+			'thirdweb',
+			'Polybase',
+			'Tailwind CSS',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/arkway',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://arkway.vercel.app/',
 				Icon: PiGithubLogo,
 			},
 		],

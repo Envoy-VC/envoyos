@@ -10,7 +10,7 @@ export interface ProjectDetails {
 	name: string;
 	isFeatured: boolean;
 	description: string;
-	image: StaticImageData;
+	image?: StaticImageData;
 	technologies: string[];
 	links: { name: string; href: string; Icon: IconType }[];
 }
