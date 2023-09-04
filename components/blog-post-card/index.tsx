@@ -28,6 +28,7 @@ const BlogPostCard = ({ post }: BlogPostCardProps) => {
 						className='font-calibreSemibold text-3xl text-textPrimary transition-all duration-300 ease-in-out'
 						href={link}
 						target='_blank'
+						title='Go to post'
 					>
 						{title}
 					</Link>
@@ -36,7 +37,12 @@ const BlogPostCard = ({ post }: BlogPostCardProps) => {
 					</div>
 				</div>
 			</div>
-			<Link href={link} target='_blank' rel='noopener noreferrer'>
+			<Link
+				href={link}
+				target='_blank'
+				rel='noopener noreferrer'
+				title='Go to post'
+			>
 				<PiArrowCircleUpRightLight
 					size={96}
 					className='hidden rotate-[25deg] transition-all duration-300 ease-in-out hover:rotate-0 hover:text-primary sm:flex'
