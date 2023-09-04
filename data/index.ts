@@ -133,4 +133,148 @@ export const Projects: ProjectDetails[] = [
 			},
 		],
 	},
+	{
+		name: 'Blip',
+		isFeatured: false,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
+		technologies: [
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/blip',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://blip.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
+	{
+		name: 'Blip',
+		isFeatured: false,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
+		technologies: [
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/blip',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://blip.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
+	{
+		name: 'Blip',
+		isFeatured: false,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
+		technologies: [
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/blip',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://blip.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
+	{
+		name: 'Blip',
+		isFeatured: false,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
+		technologies: [
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/blip',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://blip.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
+	{
+		name: 'Blip',
+		isFeatured: false,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
+		technologies: [
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/blip',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://blip.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
+	{
+		name: 'Blip',
+		isFeatured: false,
+		description: `Blip is a video sharing app built on top of Lens Protocol and Arweave. Along with all the basic features users also manage the rights to their content by utilizing the Universal Data License.`,
+		technologies: [
+			'Next.js',
+			'Lens Protocol',
+			'Arweave',
+			'TailwindCSS',
+			'GraphQL',
+		],
+		links: [
+			{
+				name: 'GitHub',
+				href: 'https://github.com/Envoy-VC/blip',
+				Icon: PiLink,
+			},
+			{
+				name: 'Website',
+				href: 'https://blip.vercel.app/',
+				Icon: PiGithubLogo,
+			},
+		],
+	},
 ];

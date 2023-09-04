@@ -4,6 +4,7 @@ import EmailContactCover from './email-contact';
 import Sidebar from './sidebar';
 import Loader from './loader';
 import FeaturedProjectCard from './featured-project-card';
+import ProjectCard from './project-card';
 
 export {
 	Navbar,
@@ -12,4 +13,5 @@ export {
 	Loader,
 	Sidebar,
 	FeaturedProjectCard,
+	ProjectCard,
 };
