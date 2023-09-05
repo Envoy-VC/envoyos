@@ -30,7 +30,7 @@ const Contact = () => {
 				variants={ContactVariant}
 			>
 				<div className='font-sfMono text-[1rem] text-primary'>
-					01. What&lsquo;s Next?
+					04. What&lsquo;s Next?
 				</div>
 				<span className='font-calibreMedium text-4xl text-textPrimary sm:text-6xl'>
 					Get In Touch
