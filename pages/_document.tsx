@@ -4,6 +4,11 @@ export default function Document() {
 	return (
 		<Html lang='en'>
 			<Head>
+				<script
+					defer
+					data-domain='vedantc.dev'
+					src='https://plausible.io/js/script.js'
+				></script>
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
