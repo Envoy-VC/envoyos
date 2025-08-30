@@ -5,6 +5,7 @@ import "../styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 
+import { GrainEffect } from "@/components";
 import { TRPCReactProvider } from "@/trpc/react";
 
 export const metadata: Metadata = {
@@ -16,8 +17,11 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html className={GeistSans.variable} lang="en">
-      <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+      <body className="bg-black">
+        <TRPCReactProvider>
+          <GrainEffect />
+          {children}
+        </TRPCReactProvider>
       </body>
     </html>
   );

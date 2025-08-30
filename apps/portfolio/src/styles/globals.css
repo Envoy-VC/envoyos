@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@keyframes grainEffect {
+  0% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+  25% {
+    transform: translate3d(-200px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+  50% {
+    transform: translate3d(0px, -200px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+  75% {
+    transform: translate3d(-200px, -200px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, -200px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+}
+
+.grain-effect {
+  animation: grainEffect 2.5s steps(4) infinite;
+  transform-style: preserve-3d;
+}
