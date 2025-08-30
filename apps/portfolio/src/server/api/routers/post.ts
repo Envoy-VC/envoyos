@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { type } from "arktype";
 
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
 
@@ -14,26 +14,21 @@ const posts: Post[] = [
   },
 ];
 
+const CreatePostSchema = type({
+  name: "string > 0",
+});
+
 export const postRouter = createTRPCRouter({
-  create: publicProcedure
-    .input(z.object({ name: z.string().min(1) }))
-    .mutation(({ input }) => {
-      const post: Post = {
-        id: posts.length + 1,
-        name: input.name,
-      };
-      posts.push(post);
-      return Promise.resolve(post);
-    }),
+  create: publicProcedure.input(CreatePostSchema).mutation(({ input }) => {
+    const post: Post = {
+      id: posts.length + 1,
+      name: input.name,
+    };
+    posts.push(post);
+    return Promise.resolve(post);
+  }),
 
   getLatest: publicProcedure.query(() => {
     return posts.at(-1) ?? null;
   }),
-  hello: publicProcedure
-    .input(z.object({ text: z.string() }))
-    .query(({ input }) => {
-      return {
-        greeting: `Hello ${input.text}`,
-      };
-    }),
 });
