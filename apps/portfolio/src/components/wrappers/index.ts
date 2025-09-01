@@ -1,1 +1,1 @@
-export * from "./grain";
+export * from "./smooth-scroll";
