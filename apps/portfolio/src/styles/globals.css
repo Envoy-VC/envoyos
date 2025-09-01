@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Formula Condensed Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/FormulaCondensed-Bold.woff") format("woff");
+}
+
+@theme inline {
+  --color-background: #1c1c1c;
+  --color-foreground: #fef6e7;
+  --color-border: #fff;
+
+  --font-formula: "Formula Condensed Bold";
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 @keyframes grainEffect {
   0% {
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)

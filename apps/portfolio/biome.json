@@ -19,6 +19,16 @@
       }
     },
     {
+      "includes": ["./src/styles/globals.css"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noUnknownAtRules": "off"
+          }
+        }
+      }
+    },
+    {
       "includes": [
         "./src/app/**/page.tsx",
         "./src/app/**/layout.tsx",
