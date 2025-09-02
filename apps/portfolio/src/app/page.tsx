@@ -1,10 +1,12 @@
-import { Hero, Navbar } from "@/components";
+import { About, Hero, Navbar } from "@/components";
 
 const HomePage = () => {
   return (
-    <div className="z-[2] h-[400vh] w-full overflow-hidden">
+    <div className="z-[2] w-full overflow-hidden">
       <Navbar />
       <Hero />
+      <About />
+      <div className="h-screen"></div>
     </div>
   );
 };
