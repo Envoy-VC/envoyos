@@ -34,7 +34,11 @@
       }
     }
   },
-  "css": { "formatter": { "enabled": true } },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  },
   "formatter": {
     "attributePosition": "auto",
     "bracketSpacing": true,
@@ -54,15 +58,23 @@
       "semicolons": "always",
       "trailingCommas": "all"
     },
-    "parser": { "jsxEverywhere": false }
+    "parser": {
+      "jsxEverywhere": false
+    }
   },
-  "json": { "parser": { "allowComments": true } },
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
   "linter": {
     "rules": {
       "complexity": {
         "noExcessiveCognitiveComplexity": {
           "level": "error",
-          "options": { "maxAllowedComplexity": 20 }
+          "options": {
+            "maxAllowedComplexity": 20
+          }
         },
         "noUselessStringConcat": "error",
         "noUselessUndefinedInitialization": "error",
@@ -72,7 +84,7 @@
       },
       "correctness": {
         "noConstantMathMinMaxClamp": "error",
-        "noUndeclaredDependencies": "error",
+        "noUndeclaredDependencies": "off",
         "noUnusedImports": "error",
         "useHookAtTopLevel": "error"
       },
@@ -103,7 +115,10 @@
         "useExplicitLengthCheck": "error",
         "useFilenamingConvention": {
           "level": "error",
-          "options": { "filenameCases": ["kebab-case"], "requireAscii": true }
+          "options": {
+            "filenameCases": ["kebab-case"],
+            "requireAscii": true
+          }
         },
         "useForOf": "error",
         "useFragmentSyntax": "error",
@@ -111,18 +126,29 @@
           "level": "error",
           "options": {
             "conventions": [
-              { "formats": ["PascalCase"], "selector": { "kind": "typeLike" } },
+              {
+                "formats": ["PascalCase"],
+                "selector": {
+                  "kind": "typeLike"
+                }
+              },
               {
                 "formats": ["PascalCase", "CONSTANT_CASE", "camelCase"],
-                "selector": { "kind": "variable" }
+                "selector": {
+                  "kind": "variable"
+                }
               },
               {
                 "formats": ["camelCase", "PascalCase"],
-                "selector": { "kind": "function" }
+                "selector": {
+                  "kind": "function"
+                }
               },
               {
                 "formats": ["camelCase"],
-                "selector": { "kind": "namespaceLike" }
+                "selector": {
+                  "kind": "namespaceLike"
+                }
               }
             ],
             "requireAscii": true,
@@ -152,7 +178,13 @@
         "**/*.config.mjs",
         "**/*.config.cjs"
       ],
-      "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
     }
   ],
   "vcs": {

@@ -16,7 +16,7 @@ const list: Variants = {
 
 const item: Variants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, transition: { stiffness: 200, type: "spring" }, y: 0 },
+  show: { opacity: 1, transition: { stiffness: 100, type: "spring" }, y: 0 },
 };
 
 const lines = [
@@ -50,7 +50,6 @@ const lines = [
         },
       }}
     />
-    ,
   </div>,
   <div key="hero-line-2-inner">
     engineered with{" "}
@@ -77,7 +76,6 @@ const lines = [
         },
       }}
     />
-    ,
   </div>,
   <div key="hero-line-3-inner">
     oriented to{" "}
@@ -133,7 +131,6 @@ const lines = [
         },
       }}
     />
-    .
   </div>,
 ];
 

@@ -1,5 +1,5 @@
 /** biome-ignore-all lint/performance/noImgElement: safe */
-export const About = () => {
+export const Tagline = () => {
   return (
     <div className="flex h-[60dvh] w-full flex-col items-center justify-center gap-4 text-center font-formula text-5xl text-[#D0D5FF] uppercase leading-[0.9] tracking-wider">
       <div className="flex flex-row items-center gap-2">
@@ -42,18 +42,18 @@ export const About = () => {
 
       <div className="flex flex-row items-center gap-2">
         <div>Most active on</div>
-        <div className="relative h-12 w-18">
+        <div className="relative h-12 w-16">
           <img
             alt="twitter"
-            className="-top-1/2 -rotate-9 absolute right-1/2 size-18 translate-x-1/2 transition-all duration-[0.5s] ease-out hover:rotate-0 hover:scale-105"
+            className="-top-1/2 -rotate-9 absolute right-1/2 size-16 translate-x-1/2 transition-all duration-[0.5s] ease-out hover:rotate-0 hover:scale-105"
             src="/about/twitter.png"
           />
         </div>
         <div>usually lurking on</div>
-        <div className="relative h-12 w-18">
+        <div className="relative h-12 w-16">
           <img
             alt="github"
-            className="-top-1/2 absolute right-1/2 size-18 translate-x-1/2 rotate-9 transition-all duration-[0.5s] ease-out hover:rotate-0 hover:scale-105"
+            className="-top-1/2 absolute right-1/2 size-16 translate-x-1/2 rotate-9 transition-all duration-[0.5s] ease-out hover:rotate-0 hover:scale-105"
             src="/about/github.png"
           />
         </div>

@@ -1,19 +1,19 @@
 @import "tailwindcss";
 @import "lenis/dist/lenis.css";
 
-@font-face {
-  font-family: "Formula Condensed Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/FormulaCondensed-Bold.woff") format("woff");
-}
-
 @theme inline {
   --color-background: #1c1c1c;
   --color-foreground: #fef6e7;
+
+  --color-primary: #f54e25;
   --color-border: #fff;
 
-  --font-formula: "Formula Condensed Bold";
+  --color-muted-foreground: #a7a9be;
+
+  --font-formula: var(--font-formula);
+  --font-sans: var(--font-inter);
+
+  --animate-spin-slow: spin 10s linear infinite;
 }
 
 @layer base {
@@ -23,32 +23,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-@keyframes grainEffect {
-  0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  25% {
-    transform: translate3d(-200px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  50% {
-    transform: translate3d(0px, -200px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  75% {
-    transform: translate3d(-200px, -200px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  100% {
-    transform: translate3d(0px, 0px, -200px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  }
-}
-
-.grain-effect {
-  animation: grainEffect 2.5s steps(4) infinite;
-  transform-style: preserve-3d;
 }
