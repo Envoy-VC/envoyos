@@ -138,7 +138,7 @@ export const IntroLines = () => {
   return (
     <motion.div
       animate="show"
-      className="mx-auto flex w-full flex-col justify-center gap-3 px-2 py-24 text-center font-formula text-4xl text-[#FEF6E7] uppercase leading-[0.95] tracking-wide lg:text-[5rem]"
+      className="mx-auto flex w-full flex-col justify-center gap-3 px-2 py-24 text-center font-formula text-4xl text-[#FEF6E7] uppercase leading-[0.95] tracking-wide sm:text-5xl md:text-6xl lg:text-[5rem]"
       initial="hidden"
       variants={list}
     >

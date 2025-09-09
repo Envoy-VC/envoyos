@@ -7,15 +7,15 @@ I've always had a passion for presenting things in a visually compelling way fro
 export const About = () => {
   return (
     <div className="flex h-screen w-full flex-col gap-8 py-4">
-      <div className="pb-8 text-center font-formula font-medium text-4xl uppercase tracking-wider sm:text-5xl lg:text-7xl">
+      <div className="pb-8 text-center font-formula font-medium text-5xl uppercase tracking-wider sm:text-5xl md:text-6xl lg:text-7xl">
         Web Developer and
         <br />A Little Bit of Everything
         <span className="text-primary">...</span>
       </div>
       <div className="flex h-full flex-col justify-around">
-        <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-4 p-2 px-4 md:flex-row">
+        <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-24 p-2 px-4 sm:gap-8 md:flex-row">
           <div className="flex w-full basis-1/2 flex-col justify-center">
-            <div className="text-center font-formula text-3xl uppercase leading-[1] tracking-wider md:text-start md:text-[2.85rem]">
+            <div className="text-center font-formula text-4xl uppercase tracking-wider md:text-start md:text-[2.85rem] md:leading-[1]">
               Shaping ideas into
               <br />
               shipped products

@@ -12,7 +12,7 @@ export const AboutImage = () => {
       <div className="relative">
         <div className="-top-1/3 -left-1/4 absolute translate-x-5 animate-spin-slow">
           <svg
-            className="w-32 transition-all duration-200 ease-in-out hover:scale-105"
+            className="w-24 transition-all duration-200 ease-in-out hover:scale-105 sm:w-32"
             fill="none"
             height="117"
             viewBox="-1 -1 117 117"
@@ -34,9 +34,9 @@ export const AboutImage = () => {
           }}
           whileHover={{ rotate: "-4deg", scale: 1.025 }}
         >
-          <div className="relative flex size-20 items-center justify-center rounded-full bg-[#007656]">
-            <GlobeIcon className="size-16" strokeWidth={1.5} />
-            <div className="-translate-y-1/2 absolute top-1/2 right-1/2 translate-x-1/2 rounded-full bg-[#D0D4FE] px-2 py-[2px] font-bold font-sans text-[#007656] text-sm">
+          <div className="relative flex size-16 items-center justify-center rounded-full bg-[#007656] md:size-20">
+            <GlobeIcon className="size-12 md:size-16" strokeWidth={1.5} />
+            <div className="-translate-y-1/2 absolute top-1/2 right-1/2 translate-x-1/2 rounded-full bg-[#D0D4FE] px-2 py-[2px] font-bold font-sans text-[#007656] text-xs md:text-sm">
               httpz://
             </div>
           </div>
@@ -51,7 +51,7 @@ export const AboutImage = () => {
           whileHover={{ rotate: "-6deg", scale: 1.025 }}
         >
           <Squircle
-            className="h-[12rem] w-[18rem] overflow-hidden bg-red-200"
+            className="h-[8rem] w-[14rem] overflow-hidden bg-red-200 md:h-[12rem] md:w-[18rem]"
             cornerRadius={32}
             cornerSmoothing={2}
           ></Squircle>
@@ -59,9 +59,9 @@ export const AboutImage = () => {
       </div>
 
       <div className="-rotate-8 -translate-x-1/2 translate-y-1/5">
-        <div className="relative">
+        <div className="relative border">
           <motion.div
-            className="-top-1/4 absolute left-1/3 z-[2] rotate-[32deg] scale-[50%]"
+            className="-translate-y-1/2 absolute top-0 right-0 z-[2] w-[8rem] translate-x-1/3 rotate-[32deg] md:w-[12rem] md:translate-x-1/2"
             transition={{
               damping: 20,
               stiffness: 200,
@@ -72,7 +72,7 @@ export const AboutImage = () => {
             <CreateSticker className="" />
           </motion.div>
           <motion.div
-            className="-bottom-1/3 -right-1/4 absolute z-[2] size-42 rotate-12"
+            className="absolute right-0 bottom-0 z-[2] size-32 translate-y-1/2 rotate-12 md:size-42 md:translate-x-1/3"
             transition={{
               damping: 20,
               stiffness: 200,
@@ -92,7 +92,7 @@ export const AboutImage = () => {
             whileHover={{ rotate: "6deg", scale: 1.025 }}
           >
             <Squircle
-              className="h-[12rem] w-[18rem] overflow-hidden bg-green-200"
+              className="h-[8rem] w-[14rem] overflow-hidden bg-green-200 md:h-[12rem] md:w-[18rem]"
               cornerRadius={32}
               cornerSmoothing={2}
             ></Squircle>
