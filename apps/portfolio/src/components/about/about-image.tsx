@@ -12,7 +12,7 @@ export const AboutImage = () => {
       <div className="relative">
         <div className="-translate-x-[40%] -translate-y-1/2 absolute top-0 left-0 animate-spin-slow">
           <svg
-            className="w-18 transition-all duration-200 ease-in-out hover:scale-105 sm:w-32"
+            className="w-18 transition-all duration-200 ease-in-out hover:scale-105 md:w-24 lg:w-32"
             fill="none"
             height="117"
             viewBox="-1 -1 117 117"
