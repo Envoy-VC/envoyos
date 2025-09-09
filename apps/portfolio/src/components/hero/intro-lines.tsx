@@ -26,7 +26,7 @@ const lines = [
   >
     Inspired by{" "}
     <StickerText
-      className="-translate-y-[1rem] -translate-x-[1rem] lg:max-w-[8rem]"
+      className="-translate-y-[1rem] -translate-x-[1rem] md:max-w-[7rem] lg:max-w-[8rem]"
       color="#fabe29"
       sticker={{
         url: "/stickers/eth.png",
@@ -107,7 +107,7 @@ const lines = [
   <div key="hero-line-4-inner">
     aimed at{" "}
     <StickerText
-      className="max-w-[6rem] lg:max-w-[14rem]"
+      className="max-w-[6rem] md:max-w-[11rem] lg:max-w-[14rem]"
       color="#F54E25"
       sticker={{
         url: "/stickers/buzz.png",

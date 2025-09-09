@@ -37,7 +37,7 @@ export const Marquee = () => {
       <div className="absolute top-1/2 right-1/2 h-16 w-[200dvw] translate-x-1/2 rotate-[5deg] bg-[#2E2E2E] md:h-28" />
       <div className="-translate-x-8 flex h-16 w-[200dvw] rotate-[-5deg] items-center justify-center bg-[#F54E25] md:h-28">
         <InfiniteSlider
-          className="flex w-full flex-row items-center justify-center font-formula text-3xl text-[#FFCCDD] uppercase tracking-wider lg:text-6xl"
+          className="flex w-full flex-row items-center justify-center font-formula text-3xl text-[#FFCCDD] uppercase tracking-wider md:text-4xl lg:text-6xl"
           gap={16}
           speed={100}
           speedOnHover={60}
@@ -50,7 +50,7 @@ export const Marquee = () => {
                   key={`line-${line}`}
                 >
                   <div className="text-nowrap hover:text-[#fabe29]">{line}</div>
-                  <div className="-translate-y-2 my-auto aspect-square h-2 rotate-45 bg-[#FFCCDD] md:h-4" />
+                  <div className="my-auto aspect-square h-2 rotate-45 bg-[#FFCCDD] md:h-4" />
                 </div>
               );
             })}

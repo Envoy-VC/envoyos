@@ -16,7 +16,7 @@ export const About = () => {
         <br />A Little Bit of Everything
         <span className="text-primary">...</span>
       </div>
-      <div className="flex h-full flex-col justify-around gap-12">
+      <div className="flex h-full flex-col justify-around gap-24 lg:gap-12">
         <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-12 p-2 px-4 sm:gap-8 lg:flex-row">
           <div className="flex w-full basis-1/2 flex-col items-center justify-center lg:items-start">
             <div className="text-center font-formula text-4xl uppercase leading-[1] tracking-wider md:text-[2.85rem] lg:text-start lg:text-6xl">

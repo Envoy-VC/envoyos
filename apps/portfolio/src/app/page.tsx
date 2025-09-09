@@ -1,4 +1,4 @@
-import { About, Hero, Navbar, Vision } from "@/components";
+import { About, Focus, Hero, Navbar, Vision } from "@/components";
 
 const HomePage = () => {
   return (
@@ -30,6 +30,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Vision />
+      <Focus />
       <div className="h-[400dvh]"></div>
     </div>
   );

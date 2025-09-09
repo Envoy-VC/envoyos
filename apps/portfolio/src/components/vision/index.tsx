@@ -3,7 +3,7 @@ const answer = `For me, building in Web3 is about creating systems that people a
 
 export const Vision = () => {
   return (
-    <div className="my-12 flex w-full flex-col items-center justify-center gap-4 bg-[#FFCCDD] px-8 py-12 text-center">
+    <div className="my-[10dvh] flex w-full flex-col items-center justify-center gap-4 bg-[#FFCCDD] px-8 py-12 text-center md:my-[20dvh]">
       <div className="mx-auto max-w-screen-xl font-formula text-3xl text-[#5737AF] uppercase tracking-wider sm:text-4xl md:text-5xl">
         <span className="font-bold text-primary">"</span>
         {statement}

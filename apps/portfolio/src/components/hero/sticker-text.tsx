@@ -39,7 +39,7 @@ export const StickerText = ({
       <motion.img
         animate={hovered ? "hover" : "initial"}
         className={cn(
-          "-right-1/2 pointer-events-none absolute top-0 z-[2] max-w-[4rem] lg:max-w-[10rem]",
+          "-right-1/2 pointer-events-none absolute top-0 z-[2] max-w-[5rem] md:max-w-[8rem] lg:max-w-[12rem]",
           className,
         )}
         exit="exit"
