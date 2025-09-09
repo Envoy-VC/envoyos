@@ -8,11 +8,11 @@ import { CreateSticker, VanSticker } from "../stickers";
 
 export const AboutImage = () => {
   return (
-    <div className="relative flex w-[20rem] flex-row">
+    <div className="relative flex w-[18rem] flex-row md:w-[30rem]">
       <div className="relative">
-        <div className="-top-1/3 -left-1/4 absolute translate-x-5 animate-spin-slow">
+        <div className="-translate-x-[40%] -translate-y-1/2 absolute top-0 left-0 animate-spin-slow">
           <svg
-            className="w-24 transition-all duration-200 ease-in-out hover:scale-105 sm:w-32"
+            className="w-18 transition-all duration-200 ease-in-out hover:scale-105 sm:w-32"
             fill="none"
             height="117"
             viewBox="-1 -1 117 117"
@@ -29,14 +29,14 @@ export const AboutImage = () => {
           className="-bottom-1/5 -rotate-12 absolute left-[10%] z-[2]"
           transition={{
             damping: 20,
-            stiffness: 200,
+            stiffness: 400,
             type: "spring",
           }}
           whileHover={{ rotate: "-4deg", scale: 1.025 }}
         >
-          <div className="relative flex size-16 items-center justify-center rounded-full bg-[#007656] md:size-20">
-            <GlobeIcon className="size-12 md:size-16" strokeWidth={1.5} />
-            <div className="-translate-y-1/2 absolute top-1/2 right-1/2 translate-x-1/2 rounded-full bg-[#D0D4FE] px-2 py-[2px] font-bold font-sans text-[#007656] text-xs md:text-sm">
+          <div className="relative flex size-12 items-center justify-center rounded-full bg-[#007656] md:size-20">
+            <GlobeIcon className="size-10 md:size-16" strokeWidth={1.5} />
+            <div className="-translate-y-1/2 absolute top-1/2 right-1/2 translate-x-1/2 rounded-full bg-[#D0D4FE] px-1 py-[2px] font-bold font-sans text-[#007656] text-[10px] md:px-2 md:text-sm">
               httpz://
             </div>
           </div>
@@ -45,13 +45,13 @@ export const AboutImage = () => {
           className="rotate-8"
           transition={{
             damping: 20,
-            stiffness: 200,
+            stiffness: 400,
             type: "spring",
           }}
           whileHover={{ rotate: "-6deg", scale: 1.025 }}
         >
           <Squircle
-            className="h-[8rem] w-[14rem] overflow-hidden bg-red-200 md:h-[12rem] md:w-[18rem]"
+            className="h-[6rem] w-[12rem] overflow-hidden bg-red-200 md:h-[12rem] md:w-[18rem]"
             cornerRadius={32}
             cornerSmoothing={2}
           ></Squircle>
@@ -59,12 +59,12 @@ export const AboutImage = () => {
       </div>
 
       <div className="-rotate-8 -translate-x-1/2 translate-y-1/5">
-        <div className="relative border">
+        <div className="relative">
           <motion.div
-            className="-translate-y-1/2 absolute top-0 right-0 z-[2] w-[8rem] translate-x-1/3 rotate-[32deg] md:w-[12rem] md:translate-x-1/2"
+            className="-translate-y-1/2 absolute top-0 right-0 z-[2] w-[6rem] translate-x-1/3 rotate-[32deg] md:w-[12rem] md:translate-x-1/2"
             transition={{
               damping: 20,
-              stiffness: 200,
+              stiffness: 400,
               type: "spring",
             }}
             whileHover={{ rotate: "-6deg", scale: 1.025 }}
@@ -72,10 +72,10 @@ export const AboutImage = () => {
             <CreateSticker className="" />
           </motion.div>
           <motion.div
-            className="absolute right-0 bottom-0 z-[2] size-32 translate-y-1/2 rotate-12 md:size-42 md:translate-x-1/3"
+            className="absolute right-0 bottom-0 z-[2] size-24 translate-y-1/2 rotate-12 md:size-42 md:translate-x-1/3"
             transition={{
               damping: 20,
-              stiffness: 200,
+              stiffness: 400,
               type: "spring",
             }}
             whileHover={{ rotate: "-6deg", scale: 1.025 }}
@@ -86,13 +86,13 @@ export const AboutImage = () => {
           <motion.div
             transition={{
               damping: 20,
-              stiffness: 200,
+              stiffness: 400,
               type: "spring",
             }}
             whileHover={{ rotate: "6deg", scale: 1.025 }}
           >
             <Squircle
-              className="h-[8rem] w-[14rem] overflow-hidden bg-green-200 md:h-[12rem] md:w-[18rem]"
+              className="h-[6rem] w-[12rem] overflow-hidden bg-green-200 md:h-[12rem] md:w-[18rem]"
               cornerRadius={32}
               cornerSmoothing={2}
             ></Squircle>
