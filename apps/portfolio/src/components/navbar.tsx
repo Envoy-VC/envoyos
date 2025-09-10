@@ -66,7 +66,7 @@ export const Navbar = ({ className }: { className?: string }) => {
           y: visible ? 0 : -100,
         }}
         className={cn(
-          "fixed inset-x-0 top-6 z-[5000] mx-auto flex w-[calc(100%-2rem)] flex-row items-center justify-between gap-5 rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[#ffffff0a] px-3 py-2 backdrop-blur-[12px] md:w-fit md:justify-start",
+          "fixed inset-x-0 top-6 z-[5000] mx-auto flex w-[calc(100%-2rem)] flex-row items-center justify-between gap-5 rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[#252525] px-3 py-2 backdrop-blur-[12px] md:w-fit md:justify-start",
           className,
         )}
         initial={{

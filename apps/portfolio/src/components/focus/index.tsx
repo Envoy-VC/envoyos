@@ -18,7 +18,7 @@ export const Focus = () => {
         <div className="w-full basis-1/2">
           <FocusList />
         </div>
-        <div className="flex h-full w-full basis-1/2 items-center justify-center py-12">
+        <div className="flex h-full w-full basis-1/2 items-center justify-center py-12 lg:py-0">
           <FocusImage />
         </div>
       </div>

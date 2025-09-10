@@ -32,7 +32,6 @@ const HomePage = () => {
       <Vision />
       <Focus />
       <Projects />
-      <div className="h-[400dvh]"></div>
     </div>
   );
 };

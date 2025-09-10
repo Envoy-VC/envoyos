@@ -45,7 +45,7 @@ export const FocusList = () => {
       {items.map((item) => {
         return (
           <AccordionItem className="py-4" key={item.id} value={item.id}>
-            <AccordionTrigger className="w-full text-left font-formula text-[#A6A9BE] text-[1.65rem] uppercase leading-[1] tracking-wider sm:text-4xl">
+            <AccordionTrigger className="w-full cursor-pointer text-left font-formula text-[#A6A9BE] text-[1.65rem] uppercase leading-[1] tracking-wider sm:text-4xl">
               <div className="flex items-start justify-between gap-4">
                 <div
                   className="transition-all duration-300 group-data-expanded:text-[var(--color)]"
