@@ -1,8 +1,9 @@
+import { FocusImage } from "./focus-image";
 import { FocusList } from "./list";
 
 export const Focus = () => {
   return (
-    <div className="flex flex-col justify-center gap-12 py-12">
+    <div className="flex min-h-[75dvh] flex-col justify-center gap-12 py-12">
       <div className="flex flex-col gap-4">
         <div className="mx-auto font-formula text-5xl uppercase tracking-wider lg:text-7xl">
           What I do.
@@ -13,11 +14,13 @@ export const Focus = () => {
           excite me and make a real impact.
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center gap-12 px-8 py-12 lg:flex-row lg:gap-4">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-start gap-12 px-8 py-12 lg:flex-row lg:gap-4">
         <div className="w-full basis-1/2">
           <FocusList />
         </div>
-        <div className="h-full w-full basis-1/2"></div>
+        <div className="flex h-full w-full basis-1/2 items-center justify-center py-12">
+          <FocusImage />
+        </div>
       </div>
     </div>
   );
