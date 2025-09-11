@@ -1,4 +1,5 @@
 export * from "./about";
+export * from "./articles";
 export * from "./focus";
 export * from "./hero";
 export * from "./navbar";

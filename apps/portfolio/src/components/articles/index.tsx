@@ -1,13 +1,20 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, QuoteIcon } from "lucide-react";
 
-import { ProjectList } from "./list";
+import { ArticleList } from "./list";
 
-export const Projects = () => {
+export const Articles = () => {
   return (
-    <div className="flex flex-col justify-center gap-0 py-12">
+    <div className="flex flex-col justify-center gap-12 py-12">
       <div className="flex flex-col gap-4">
         <div className="mx-auto flex flex-col items-center justify-center gap-4 text-center font-formula uppercase tracking-wider">
-          <div className="text-5xl lg:text-7xl">Creations</div>
+          <div className="relative">
+            <div className="-translate-y-[75%] -translate-x-1/2 -rotate-12 absolute top-0 left-0 z-[2] rounded-r-2xl bg-[#007656] p-2 sm:p-3">
+              <QuoteIcon className="text-[#FFCCDD]" size={32} />
+            </div>
+            <div className="text-5xl lg:text-7xl">
+              Write Ups & <div className="sm:inline-flex">Brainwaves</div>
+            </div>
+          </div>
           <div className="group flex cursor-pointer flex-row items-start text-[#FFCCDD] tracking-wide">
             <div className="font-formula text-3xl uppercase transition-all duration-200 ease-in-out group-hover:text-primary">
               view all
@@ -20,8 +27,8 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center gap-12 px-8 py-12 lg:flex-row lg:gap-4">
-        <ProjectList />
+      <div className="flex w-full">
+        <ArticleList />
       </div>
     </div>
   );

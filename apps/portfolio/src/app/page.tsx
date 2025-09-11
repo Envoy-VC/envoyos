@@ -1,4 +1,12 @@
-import { About, Focus, Hero, Navbar, Projects, Vision } from "@/components";
+import {
+  About,
+  Articles,
+  Focus,
+  Hero,
+  Navbar,
+  Projects,
+  Vision,
+} from "@/components";
 
 const HomePage = () => {
   return (
@@ -32,6 +40,10 @@ const HomePage = () => {
       <Vision />
       <Focus />
       <Projects />
+      <Articles />
+      <div className="h-screen"></div>
+      <div className="h-screen"></div>
+      <div className="h-screen"></div>
     </div>
   );
 };
