@@ -59,6 +59,9 @@ importers:
       geist:
         specifier: ^1.4.2
         version: 1.4.2(next@15.5.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1))
+      gsap:
+        specifier: ^3.13.0
+        version: 3.13.0
       lenis:
         specifier: ^1.3.11
         version: 1.3.11(react@19.1.1)
@@ -867,6 +870,9 @@ packages:
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  gsap@3.13.0:
+    resolution: {integrity: sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -2091,6 +2097,8 @@ snapshots:
       ini: 4.1.1
 
   graceful-fs@4.2.11: {}
+
+  gsap@3.13.0: {}
 
   import-fresh@3.3.1:
     dependencies:
