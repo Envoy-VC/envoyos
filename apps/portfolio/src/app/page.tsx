@@ -8,6 +8,7 @@ import {
   Vision,
 } from "@/components";
 import { Socials } from "@/components/socials";
+import { Contact } from "@/sections";
 
 const HomePage = () => {
   return (
@@ -43,6 +44,8 @@ const HomePage = () => {
       <Projects />
       <Articles />
       <Socials />
+      <Contact />
+      <div className="h-screen"></div>
     </div>
   );
 };
