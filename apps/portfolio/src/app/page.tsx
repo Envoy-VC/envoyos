@@ -2,6 +2,7 @@ import {
   About,
   Articles,
   Focus,
+  Footer,
   Hero,
   Navbar,
   Projects,
@@ -45,7 +46,7 @@ const HomePage = () => {
       <Articles />
       <Socials />
       <Contact />
-      <div className="h-screen"></div>
+      <Footer />
     </div>
   );
 };
