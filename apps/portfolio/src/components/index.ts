@@ -1,5 +1,6 @@
 export * from "./about";
 export * from "./articles";
+export * from "./custom-cursor";
 export * from "./focus";
 export * from "./footer";
 export * from "./hero";
