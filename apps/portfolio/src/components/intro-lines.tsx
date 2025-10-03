@@ -2,6 +2,8 @@
 
 import { motion, type Variants } from "motion/react";
 
+import { assets } from "@/data";
+
 import { StickerText } from "./sticker-text";
 
 const list: Variants = {
@@ -29,7 +31,7 @@ const lines = [
       className="-translate-y-[1rem] -translate-x-[1rem] md:max-w-[7rem] lg:max-w-[8rem]"
       color="#fabe29"
       sticker={{
-        url: "/stickers/eth.png",
+        url: assets.stickers.eth,
       }}
       text="networks"
       variants={{
@@ -56,7 +58,7 @@ const lines = [
     <StickerText
       className="lg:-translate-y-[2rem] -translate-y-[1rem] -translate-x-[1rem]"
       color="#007656"
-      sticker={{ url: "/stickers/dartboard.png" }}
+      sticker={{ url: assets.stickers.dartboard }}
       text="precision"
       variants={{
         exit: {
@@ -82,7 +84,7 @@ const lines = [
     <StickerText
       className="-translate-y-[25%]"
       color="#FFCCDD"
-      sticker={{ url: "/stickers/mario.png" }}
+      sticker={{ url: assets.stickers.mario }}
       text="progress"
       variants={{
         exit: {
@@ -110,7 +112,7 @@ const lines = [
       className="max-w-[6rem] md:max-w-[11rem] lg:max-w-[14rem]"
       color="#F54E25"
       sticker={{
-        url: "/stickers/buzz.png",
+        url: assets.stickers.buzz,
       }}
       text="infinity"
       variants={{

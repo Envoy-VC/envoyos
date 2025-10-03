@@ -54,3 +54,25 @@ I'm obsessed with Silicon Valley reruns, love gaming, and spend most of my time 
     statement: `Sometimes the best way to solve a problem is to build something completely new.`,
   },
 };
+
+export const assets = {
+  stickers: {
+    balloon:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOMMYI0uTifx9O5nHrWRGBmuT37Qg24Lb08CSV",
+    blueFlower:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOsuTj4uFsevcpQfthXTKgd9uBo8nOrmyZ7lAE",
+    buzz: "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOvxaofK2RKcFWnAx9eNvq6BoHUZOJr71EQjGS",
+    coffee:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOBC2uP152ar5qJYfiCxXbhcDPloypzZHtgvkR",
+    create:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOShVVHi8veKdGuFnaJNWB1ZzLhU6lOEPkqciA",
+    dartboard:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOsU2LEKFsevcpQfthXTKgd9uBo8nOrmyZ7lAE",
+    eth: "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JO0fVeUHMaLrDdQp9cw67NXReJ5PIA4YZ8O2uK",
+    mario:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOHsFTW8qOljwYXIkZJ6MfTQbS5epzEqFsLvdn",
+    suitcase:
+      "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOpRLmRaEDqxtaSILYCXQ7eVZgsd8RHTcAukf4",
+    van: "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOhNWlxRg9sYp5oXqCRzLON1A06rUfyDdcZBeg",
+  },
+};

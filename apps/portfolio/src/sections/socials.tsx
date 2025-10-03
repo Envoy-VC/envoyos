@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+import { assets } from "@/data";
+
 import { GitHubIcon, TelegramIcon, TwitterIcon } from "../components/icons";
 
 export const Socials = () => {
@@ -25,11 +29,12 @@ export const Socials = () => {
       <div className="flex flex-row items-center gap-2">
         <div>Fueled by</div>
         <div className="relative h-12 w-18">
-          {/** biome-ignore lint/performance/noImgElement: safe */}
-          <img
+          <Image
             alt="coffee"
             className="-top-1/2 absolute right-1/2 size-18 translate-x-1/2 rotate-6 transition-all duration-[0.5s] ease-in-out hover:rotate-0 hover:scale-105"
-            src="/coffee.png"
+            height={18}
+            src={assets.stickers.coffee}
+            width={18}
           />
         </div>
         <div> and silicon valley reruns</div>

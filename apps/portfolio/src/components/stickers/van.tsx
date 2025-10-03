@@ -1,6 +1,6 @@
 import Image, { type ImageProps } from "next/image";
 
-import VanStickerImage from "public/stickers/van.png";
+import { assets } from "@/data";
 
 type Props = Omit<ImageProps, "src" | "alt">;
 
@@ -9,7 +9,7 @@ export const VanSticker = (props: Props) => {
     <Image
       alt="Van Sticker"
       height={200}
-      src={VanStickerImage}
+      src={assets.stickers.van}
       width={200}
       {...props}
     />
