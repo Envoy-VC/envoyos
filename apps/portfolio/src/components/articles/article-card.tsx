@@ -30,6 +30,13 @@ const getShortBrief = (brief: string) => {
   return shortBrief;
 };
 
+const getTagName = (tag: string) => {
+  const words = tag.split("-");
+  return words
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
 export const ArticleCard = ({
   index,
   title,
@@ -41,7 +48,7 @@ export const ArticleCard = ({
   return (
     <Squircle asChild={true} className="" cornerRadius={24} cornerSmoothing={2}>
       <a
-        className="hover:-rotate-3 flex h-[16rem] min-w-[22rem] flex-col gap-4 rounded-3xl p-8 transition-all duration-300 ease-in-out hover:scale-105 md:h-[20rem] md:min-w-[28rem]"
+        className="hover:-rotate-1 flex h-[16rem] min-w-[22rem] flex-col gap-4 rounded-3xl p-8 transition-all duration-300 ease-in-out hover:scale-[1.02] md:h-[20rem] md:min-w-[28rem]"
         href={url}
         rel="noopener noreferrer"
         style={{ backgroundColor: color }}
@@ -60,7 +67,7 @@ export const ArticleCard = ({
                 className="text-nowrap rounded-xl bg-primary px-[6px] py-[2px] text-sm md:px-3 md:py-1 md:text-base"
                 key={`article-card-tag-${index.toString()}`}
               >
-                {tag.name}
+                {getTagName(tag.name)}
               </div>
             );
           })}

@@ -40,6 +40,7 @@ export const FocusList = () => {
   return (
     <Accordion
       className="flex w-full flex-col divide-y-2 divide-[#A6A9BE]"
+      defaultOpenKey="develop-web3-applications"
       transition={{ duration: 0.2, ease: "easeInOut" }}
     >
       {items.map((item) => {
@@ -60,7 +61,7 @@ export const FocusList = () => {
                 </div>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="">
+            <AccordionContent>
               <p className="py-2 font-sans text-[#e8e8ee] text-sm sm:text-base">
                 {item.description}
               </p>

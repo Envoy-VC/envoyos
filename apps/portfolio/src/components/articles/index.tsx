@@ -4,7 +4,7 @@ import { ArticleList } from "./list";
 
 export const Articles = () => {
   return (
-    <div className="flex flex-col justify-center gap-12 py-12">
+    <div className="flex flex-col justify-center gap-12 py-[20dvh]">
       <div className="flex flex-col gap-4">
         <div className="mx-auto flex flex-col items-center justify-center gap-4 text-center font-formula uppercase tracking-wider">
           <div className="relative">

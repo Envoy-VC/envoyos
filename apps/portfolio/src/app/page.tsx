@@ -7,6 +7,7 @@ import {
   Projects,
   Vision,
 } from "@/components";
+import { Socials } from "@/components/socials";
 
 const HomePage = () => {
   return (
@@ -41,9 +42,7 @@ const HomePage = () => {
       <Focus />
       <Projects />
       <Articles />
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
+      <Socials />
     </div>
   );
 };

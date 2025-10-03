@@ -3,7 +3,7 @@ import { FocusList } from "./list";
 
 export const Focus = () => {
   return (
-    <div className="flex min-h-[75dvh] flex-col justify-center gap-12 py-12">
+    <div className="flex min-h-[80dvh] flex-col justify-center gap-12 py-12">
       <div className="flex flex-col gap-4">
         <div className="mx-auto font-formula text-5xl uppercase tracking-wider lg:text-7xl">
           What I do.

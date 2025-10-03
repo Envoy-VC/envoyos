@@ -1,7 +1,7 @@
 {
   "author": "Vedant Chainani <vedantchainani1084@gmail.com>",
   "devDependencies": {
-    "@biomejs/biome": "^2.2.2"
+    "@biomejs/biome": "2.2.4"
   },
   "exports": {
     "./biome": "./biome/base.json",

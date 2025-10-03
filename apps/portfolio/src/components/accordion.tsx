@@ -41,6 +41,7 @@ export type AccordionProviderProps = {
   variants?: { expanded: Variant; collapsed: Variant };
   expandedValue?: React.Key | null;
   onValueChange?: (value: React.Key | null) => void;
+  defaultOpenKey?: React.Key | null;
 };
 
 function AccordionProvider({
@@ -48,9 +49,10 @@ function AccordionProvider({
   variants,
   expandedValue: externalExpandedValue,
   onValueChange,
+  defaultOpenKey,
 }: AccordionProviderProps) {
   const [internalExpandedValue, setInternalExpandedValue] =
-    useState<React.Key | null>(null);
+    useState<React.Key | null>(defaultOpenKey ?? null);
 
   const expandedValue =
     externalExpandedValue !== undefined
@@ -58,11 +60,10 @@ function AccordionProvider({
       : internalExpandedValue;
 
   const toggleItem = (value: React.Key) => {
-    const newValue = expandedValue === value ? null : value;
     if (onValueChange) {
-      onValueChange(newValue);
+      onValueChange(value);
     } else {
-      setInternalExpandedValue(newValue);
+      setInternalExpandedValue(value);
     }
   };
 
@@ -80,6 +81,7 @@ export type AccordionProps = {
   variants?: { expanded: Variant; collapsed: Variant };
   expandedValue?: React.Key | null;
   onValueChange?: (value: React.Key | null) => void;
+  defaultOpenKey?: React.Key | null;
 };
 
 function Accordion({
@@ -89,12 +91,14 @@ function Accordion({
   variants,
   expandedValue,
   onValueChange,
+  defaultOpenKey,
 }: AccordionProps) {
   return (
     <MotionConfig transition={transition}>
       {/** biome-ignore lint/a11y/useAriaPropsSupportedByRole: supported */}
       <div aria-orientation="vertical" className={cn("relative", className)}>
         <AccordionProvider
+          defaultOpenKey={defaultOpenKey}
           expandedValue={expandedValue}
           onValueChange={onValueChange}
           variants={variants}
