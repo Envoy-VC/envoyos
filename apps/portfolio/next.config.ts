@@ -8,6 +8,10 @@ const config: NextConfig = {
         hostname: "g1cb8myw8k.ufs.sh",
         protocol: "https",
       },
+      {
+        hostname: "images.unsplash.com",
+        protocol: "https",
+      },
     ],
   },
   typedRoutes: true,
