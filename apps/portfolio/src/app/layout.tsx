@@ -7,7 +7,6 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 import { SmoothScroll } from "@/components";
-import { TRPCReactProvider } from "@/trpc/react";
 
 const formula = localFont({
   display: "swap",
@@ -30,9 +29,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       lang="en"
     >
       <body>
-        <TRPCReactProvider>
-          <SmoothScroll>{children}</SmoothScroll>
-        </TRPCReactProvider>
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

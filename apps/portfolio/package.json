@@ -5,10 +5,6 @@
   "dependencies": {
     "@squircle-js/react": "^1.2.18",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "@tanstack/react-query": "^5.85.5",
-    "@trpc/client": "^11.5.0",
-    "@trpc/react-query": "^11.5.0",
-    "@trpc/server": "^11.5.0",
     "arktype": "^2.1.20",
     "clsx": "^2.1.1",
     "geist": "^1.4.2",
@@ -22,7 +18,6 @@
     "react-use-measure": "^2.1.7",
     "server-only": "^0.0.1",
     "sonner": "^2.0.7",
-    "superjson": "^2.2.2",
     "tailwind-merge": "^3.3.1",
     "usehooks-ts": "^3.1.1",
     "zustand": "^5.0.8"
@@ -44,7 +39,7 @@
   "packageManager": "pnpm@9.4.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "next build --turbo",
     "check": "pnpm format && tsc --noEmit",
     "dev": "next dev --turbo",
     "preview": "next build && next start",
