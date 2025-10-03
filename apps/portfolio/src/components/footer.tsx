@@ -60,17 +60,17 @@ const socials = [
 
 export const Footer = () => {
   return (
-    <footer className="mt-12 w-full bg-primary p-16" id="footer">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-row items-center justify-between">
-        <div className="flex flex-row items-start gap-8">
-          <div className="font-formula text-5xl text-[#1C1C1C] uppercase tracking-wide">
+    <footer className="mt-12 w-full bg-primary py-16" id="footer">
+      <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="flex flex-col items-start gap-8 md:flex-row">
+          <div className="mx-auto font-formula text-4xl text-[#1C1C1C] uppercase tracking-wide md:mx-0 md:text-5xl">
             EnvoyOS
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-row gap-4 md:flex-col md:px-8">
             {footerItems.map((item) => {
               return (
                 <a
-                  className="px-8 font-sans font-semibold text-[#1C1C1C] text-xl transition-all duration-200 ease-in-out hover:text-[#1C1C1C]/80"
+                  className="w-fit font-sans font-semibold text-[#1C1C1C] text-sm transition-all duration-200 ease-in-out hover:text-[#1C1C1C]/80 md:text-xl"
                   href={item.href}
                   key={item.title}
                 >

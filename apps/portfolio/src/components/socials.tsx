@@ -2,7 +2,7 @@ import { GitHubIcon, TelegramIcon, TwitterIcon } from "./icons";
 
 export const Socials = () => {
   return (
-    <div className="flex h-[50dvh] w-full flex-col items-center justify-center gap-4 text-center font-formula text-5xl text-[#D0D5FF] uppercase leading-[0.9] tracking-wider">
+    <div className="hidden h-[50dvh] w-full flex-col items-center justify-center gap-4 text-center font-formula text-5xl text-[#D0D5FF] uppercase leading-[0.9] tracking-wider md:flex">
       <div className="flex flex-row items-center gap-2">
         <div className="min-w-fit">I'm most active on</div>
         <div className="relative h-12 w-16">
