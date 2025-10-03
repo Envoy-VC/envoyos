@@ -1,6 +1,6 @@
 import { ArrowUpRight, QuoteIcon } from "lucide-react";
 
-import { ArticleList } from "./list";
+import { ArticleList } from "@/components";
 
 export const Articles = () => {
   return (

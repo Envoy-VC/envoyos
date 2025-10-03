@@ -4,7 +4,7 @@ import { Squircle } from "@squircle-js/react";
 import { GlobeIcon } from "lucide-react";
 import { motion } from "motion/react";
 
-import { CreateSticker, VanSticker } from "../stickers";
+import { CreateSticker, VanSticker } from "@/components/stickers";
 
 export const AboutImage = () => {
   return (

@@ -1,9 +1,11 @@
-import { FocusImage } from "./focus-image";
-import { FocusList } from "./list";
+import { FocusImage, FocusList } from "@/components";
 
 export const Focus = () => {
   return (
-    <div className="flex min-h-[80dvh] flex-col justify-center gap-12 py-12">
+    <section
+      className="flex min-h-[80dvh] flex-col justify-center gap-12 py-12"
+      id="focus"
+    >
       <div className="flex flex-col gap-4">
         <div className="mx-auto font-formula text-5xl uppercase tracking-wider lg:text-7xl">
           What I do.
@@ -22,6 +24,6 @@ export const Focus = () => {
           <FocusImage />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

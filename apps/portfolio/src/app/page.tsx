@@ -1,21 +1,18 @@
+import { Footer, Navbar } from "@/components";
 import {
   About,
   Articles,
-  // CustomCursor,
+  Contact,
   Focus,
-  Footer,
   Hero,
-  Navbar,
   Projects,
+  Socials,
   Vision,
-} from "@/components";
-import { Socials } from "@/components/socials";
-import { Contact } from "@/sections";
+} from "@/sections";
 
 const HomePage = () => {
   return (
     <div className="w-full overflow-hidden">
-      {/* <CustomCursor /> */}
       <Navbar />
       <Hero />
       <About />

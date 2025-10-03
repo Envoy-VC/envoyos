@@ -3,7 +3,7 @@
 import { Squircle } from "@squircle-js/react";
 import { motion } from "motion/react";
 
-import { BlueFlowerSticker, SuitcaseSticker } from "../stickers";
+import { BlueFlowerSticker, SuitcaseSticker } from "@/components/stickers";
 
 export const OtherImage = () => {
   return (

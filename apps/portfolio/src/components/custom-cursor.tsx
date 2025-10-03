@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 import { Cursor } from "./cursor";
 
 export const CustomCursor = () => {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering, _] = useState(false);
   return (
     <Cursor
       attachToParent={true}

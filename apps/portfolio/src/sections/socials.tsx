@@ -1,4 +1,4 @@
-import { GitHubIcon, TelegramIcon, TwitterIcon } from "./icons";
+import { GitHubIcon, TelegramIcon, TwitterIcon } from "../components/icons";
 
 export const Socials = () => {
   return (

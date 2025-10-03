@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform, type Variants } from "motion/react";
 
-import { InfiniteSlider } from "../infinite-slider";
+import { InfiniteSlider } from "./infinite-slider";
 
 const lines = [
   "web3 developer",
@@ -13,7 +13,7 @@ const lines = [
   "always shipping",
 ];
 
-export const Marquee = () => {
+export const MarqueeTitles = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 1000], [0, -200]);
 

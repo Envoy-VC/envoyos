@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 
-import { ProjectList } from "./list";
+import { ProjectList } from "@/components";
 
 export const Projects = () => {
   return (
-    <div className="flex flex-col justify-center gap-0 py-12">
+    <section className="flex flex-col justify-center gap-0 py-12" id="projects">
       <div className="flex flex-col gap-4">
         <div className="mx-auto flex flex-col items-center justify-center gap-4 text-center font-formula uppercase tracking-wider">
           <div className="text-5xl lg:text-7xl">Creations</div>
@@ -23,6 +23,6 @@ export const Projects = () => {
       <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center gap-12 px-8 py-12 lg:flex-row lg:gap-4">
         <ProjectList />
       </div>
-    </div>
+    </section>
   );
 };

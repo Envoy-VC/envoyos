@@ -1,12 +1,5 @@
-import { AboutImage } from "./about-image";
-import { OtherImage } from "./other-image";
-
-const intro = `
-I'm Vedant, a developer and technical writer obsessed with building things that matter. For the past three years, I've been deep in the Web3 space, shipping products that push boundaries, attending IRL events, and diving into hackathons where ideas turn into deploys.
-Currently, I'm focused on building a secure Battleship game on the Nillion Network, blending cryptography, game mechanics, and user experience into something both fun and resilient.`;
-
-const intro2 = `I'm thinking about the next challenge, idea, or innovation. Perfectionism drives me to explore smarter solutions and refine every detail.
-I'm obsessed with Silicon Valley reruns, love gaming, and spend most of my time reading technical content. I also love traveling, always curious to explore new places, people, and technologies that inspire what's next.`;
+import { AboutImage, OtherImage } from "@/components";
+import { data } from "@/data";
 
 export const About = () => {
   return (
@@ -25,7 +18,7 @@ export const About = () => {
               shipped products
             </div>
             <div className="max-w-[34rem] whitespace-pre-wrap text-center font-sans text-muted-foreground text-xs md:text-sm lg:text-left lg:text-base">
-              {intro}
+              {data.about.intro}
             </div>
           </div>
           <div className="flex basis-1/2 items-center justify-center">
@@ -42,7 +35,7 @@ export const About = () => {
               developing <span className="text-primary">...</span>
             </div>
             <div className="max-w-[34rem] whitespace-pre-wrap text-center font-sans text-muted-foreground text-xs md:text-sm lg:text-left lg:text-base">
-              {intro2}
+              {data.about.other}
             </div>
           </div>
         </div>

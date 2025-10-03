@@ -60,7 +60,7 @@ const socials = [
 
 export const Footer = () => {
   return (
-    <footer className="mt-12 w-full bg-primary py-16" id="footer">
+    <footer className="mt-12 w-full bg-primary p-16" id="footer">
       <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-between gap-4 md:flex-row">
         <div className="flex flex-col items-start gap-8 md:flex-row">
           <div className="mx-auto font-formula text-4xl text-[#1C1C1C] uppercase tracking-wide md:mx-0 md:text-5xl">
