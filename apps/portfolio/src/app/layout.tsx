@@ -6,6 +6,8 @@ import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { Footer, Navbar, SmoothScroll } from "@/components";
 
 const formula = localFont({
@@ -34,6 +36,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
           {children}
         </SmoothScroll>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
