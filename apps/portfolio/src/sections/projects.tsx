@@ -20,7 +20,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center gap-12 px-8 py-12 lg:flex-row lg:gap-4">
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-12 px-8 py-12 lg:flex-row lg:gap-4">
         <ProjectList />
       </div>
     </section>

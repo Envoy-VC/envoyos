@@ -1,3 +1,5 @@
+import type { PurposeOfContact } from "@/lib/schema/contact";
+
 export const data = {
   about: {
     intro: `
@@ -76,3 +78,10 @@ export const assets = {
     van: "https://g1cb8myw8k.ufs.sh/f/FbKtWqCWf7JOhNWlxRg9sYp5oXqCRzLON1A06rUfyDdcZBeg",
   },
 };
+
+export const purposeOfContact: { id: PurposeOfContact; label: string }[] = [
+  { id: "blog-post", label: "Blog Post" },
+  { id: "integration", label: "Integration" },
+  { id: "product-development", label: "Product Development" },
+  { id: "other", label: "Other" },
+];

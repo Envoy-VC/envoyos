@@ -9,6 +9,7 @@ export const env = createEnv({
     NODE_ENV: Schema.standardSchemaV1(
       Schema.Literal("development", "production", "staging"),
     ),
+    RESEND_API_KEY: Schema.standardSchemaV1(Schema.NonEmptyString),
   },
   skipValidation: Boolean(process.env.SKIP_ENV_VALIDATION),
 });

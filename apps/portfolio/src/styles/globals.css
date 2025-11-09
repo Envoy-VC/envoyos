@@ -6,9 +6,14 @@
   --color-foreground: #fef6e7;
 
   --color-primary: #f54e25;
-  --color-border: #fff;
+  /* --color-border: #fff; */
 
   --color-muted-foreground: #a7a9be;
+
+  --color-ring: --alpha(var(--color-muted-foreground) / 20%);
+  --color-destructive: #ff4d4f;
+
+  --color-border: #3e3e3e;
 
   --font-formula: var(--font-formula);
   --font-sans: var(--font-inter);
