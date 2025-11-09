@@ -2,9 +2,6 @@
   "[css,graphql,javascript,json,jsonc,typescript,typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },

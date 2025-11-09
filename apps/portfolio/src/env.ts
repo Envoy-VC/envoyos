@@ -1,12 +1,14 @@
 import { createEnv } from "@t3-oss/env-nextjs";
-import { type } from "arktype";
+import { Schema } from "effect";
 
 export const env = createEnv({
   client: {},
   emptyStringAsUndefined: true,
   experimental__runtimeEnv: process.env,
   server: {
-    NODE_ENV: type("'development'|'test'|'production'"),
+    NODE_ENV: Schema.standardSchemaV1(
+      Schema.Literal("development", "production", "staging"),
+    ),
   },
   skipValidation: Boolean(process.env.SKIP_ENV_VALIDATION),
 });

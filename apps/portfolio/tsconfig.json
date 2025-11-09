@@ -9,7 +9,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"],
   "extends": ["@envoyos/config/tsconfig/app/next"],

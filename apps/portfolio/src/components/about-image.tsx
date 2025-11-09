@@ -8,7 +8,7 @@ import { CreateSticker, VanSticker } from "@/components/stickers";
 
 export const AboutImage = () => {
   return (
-    <div className="relative flex w-[18rem] flex-row md:w-[30rem]">
+    <div className="relative flex w-[18rem] flex-row md:w-120">
       <div className="relative">
         <div className="-translate-x-[40%] -translate-y-1/2 absolute top-0 left-0 animate-spin-slow">
           <svg
@@ -26,7 +26,7 @@ export const AboutImage = () => {
           </svg>
         </div>
         <motion.div
-          className="-bottom-1/5 -rotate-12 absolute left-[10%] z-[2]"
+          className="-bottom-1/5 -rotate-12 absolute left-[10%] z-2"
           transition={{
             damping: 20,
             stiffness: 400,
@@ -51,7 +51,7 @@ export const AboutImage = () => {
           whileHover={{ rotate: "-6deg", scale: 1.025 }}
         >
           <Squircle
-            className="h-[6rem] w-[12rem] overflow-hidden bg-red-200 md:h-[12rem] md:w-[18rem]"
+            className="h-24 w-48 overflow-hidden bg-red-200 md:h-48 md:w-[18rem]"
             cornerRadius={32}
             cornerSmoothing={2}
           ></Squircle>
@@ -61,7 +61,7 @@ export const AboutImage = () => {
       <div className="-rotate-8 -translate-x-1/2 translate-y-1/5">
         <div className="relative">
           <motion.div
-            className="-translate-y-1/2 absolute top-0 right-0 z-[2] w-[6rem] translate-x-1/3 rotate-[32deg] md:w-[12rem] md:translate-x-1/2"
+            className="-translate-y-1/2 absolute top-0 right-0 z-2 w-24 translate-x-1/3 rotate-32 md:w-48 md:translate-x-1/2"
             transition={{
               damping: 20,
               stiffness: 400,
@@ -72,7 +72,7 @@ export const AboutImage = () => {
             <CreateSticker className="" />
           </motion.div>
           <motion.div
-            className="absolute right-0 bottom-0 z-[2] size-24 translate-y-1/2 rotate-12 md:size-42 md:translate-x-1/3"
+            className="absolute right-0 bottom-0 z-2 size-24 translate-y-1/2 rotate-12 md:size-42 md:translate-x-1/3"
             transition={{
               damping: 20,
               stiffness: 400,
@@ -92,7 +92,7 @@ export const AboutImage = () => {
             whileHover={{ rotate: "6deg", scale: 1.025 }}
           >
             <Squircle
-              className="h-[6rem] w-[12rem] overflow-hidden bg-green-200 md:h-[12rem] md:w-[18rem]"
+              className="h-24 w-48 overflow-hidden bg-green-200 md:h-48 md:w-[18rem]"
               cornerRadius={32}
               cornerSmoothing={2}
             ></Squircle>

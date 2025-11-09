@@ -6,7 +6,7 @@ import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
-import { SmoothScroll } from "@/components";
+import { Footer, Navbar, SmoothScroll } from "@/components";
 
 const formula = localFont({
   display: "swap",
@@ -29,7 +29,11 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       lang="en"
     >
       <body>
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <Navbar />
+          {children}
+        </SmoothScroll>
+        <Footer />
       </body>
     </html>
   );

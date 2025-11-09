@@ -1,4 +1,3 @@
-import { Footer, Navbar } from "@/components";
 import {
   About,
   Articles,
@@ -13,7 +12,6 @@ import {
 const HomePage = () => {
   return (
     <div className="w-full overflow-hidden">
-      <Navbar />
       <Hero />
       <About />
       <Vision />
@@ -22,7 +20,6 @@ const HomePage = () => {
       <Articles />
       <Socials />
       <Contact />
-      <Footer />
     </div>
   );
 };
