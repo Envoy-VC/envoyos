@@ -1,3 +1,5 @@
+"use cache";
+
 import type { Article } from "@/types";
 
 const query = `query GetPosts {

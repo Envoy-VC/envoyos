@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import "./src/env";
 
 const config: NextConfig = {
+  cacheComponents: true,
   images: {
     remotePatterns: [
       {
@@ -14,6 +15,7 @@ const config: NextConfig = {
       },
     ],
   },
+  reactCompiler: true,
   typedRoutes: true,
 };
 
