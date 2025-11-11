@@ -3,7 +3,7 @@ import { data } from "@/data";
 
 export const About = () => {
   return (
-    <div className="flex w-full flex-col gap-8 py-4 lg:h-screen">
+    <section className="flex w-full flex-col gap-8 py-4 lg:h-screen" id="about">
       <div className="pb-8 text-center font-formula font-medium text-5xl uppercase tracking-wider sm:text-5xl md:text-6xl lg:text-7xl">
         Web Developer and
         <br />A Little Bit of Everything
@@ -40,6 +40,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

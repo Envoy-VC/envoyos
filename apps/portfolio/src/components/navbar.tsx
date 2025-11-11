@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 import { ArrowUpRightIcon, CommandIcon } from "lucide-react";
@@ -31,10 +33,10 @@ const navLinks = [
   },
   {
     id: "contact",
-    link: "#contact",
+    link: "/contact",
     name: "Contact",
   },
-];
+] as const;
 
 export const Navbar = ({ className }: { className?: string }) => {
   const { scrollYProgress } = useScroll();
@@ -66,7 +68,7 @@ export const Navbar = ({ className }: { className?: string }) => {
           y: visible ? 0 : -100,
         }}
         className={cn(
-          "fixed inset-x-0 top-6 z-[5000] mx-auto flex w-[calc(100%-2rem)] flex-row items-center justify-between gap-5 rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[#252525] px-3 py-2 backdrop-blur-[12px] md:w-fit md:justify-start",
+          "fixed inset-x-0 top-6 z-5000 mx-auto flex w-[calc(100%-2rem)] flex-row items-center justify-between gap-5 rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[#252525] px-3 py-2 backdrop-blur-md md:w-fit md:justify-start",
           className,
         )}
         initial={{
@@ -77,22 +79,23 @@ export const Navbar = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
       >
-        <div className="flex flex-row items-center gap-2">
+        <Link className="flex flex-row items-center gap-2" href="/">
           <div className="flex size-7 items-center justify-center rounded-lg bg-white text-black md:size-9">
             <CommandIcon className="size-5 md:size-6" strokeWidth={2.5} />
           </div>
           <div className="font-medium text-2xl md:text-[1.75rem]">envoyos</div>
-        </div>
-        <div className="hidden w-full min-w-[22rem] flex-row items-center justify-around gap-2 md:flex">
+        </Link>
+        <div className="hidden w-full min-w-88 flex-row items-center justify-around gap-2 md:flex">
           {navLinks.map((link) => {
             return (
-              <button
-                className="cursor-pointer rounded-full px-4 py-2 font-medium text-base text-neutral-500 transition-all duration-[0.5s] ease-in-out hover:bg-neutral-500/30 hover:text-neutral-400"
+              <Link
+                className="cursor-pointer rounded-full px-4 py-2 font-medium text-base text-neutral-500 transition-all duration-500 ease-in-out hover:bg-neutral-500/30 hover:text-neutral-400"
+                href={link.link}
                 key={link.id}
                 type="button"
               >
                 {link.name}
-              </button>
+              </Link>
             );
           })}
         </div>

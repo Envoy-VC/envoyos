@@ -4,7 +4,7 @@ export const Focus = () => {
   return (
     <section
       className="flex min-h-[80dvh] flex-col justify-center gap-12 py-12"
-      id="focus"
+      id="interests"
     >
       <div className="flex flex-col gap-4">
         <div className="mx-auto font-formula text-5xl uppercase tracking-wider lg:text-7xl">
@@ -16,7 +16,7 @@ export const Focus = () => {
           excite me and make a real impact.
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-start gap-12 px-8 py-12 lg:flex-row lg:gap-4">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-start gap-12 px-8 py-12 lg:flex-row lg:gap-4">
         <div className="w-full basis-1/2">
           <FocusList />
         </div>
